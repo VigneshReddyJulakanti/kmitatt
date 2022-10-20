@@ -110,17 +110,17 @@ while (select.hasChildNodes()) {
     
            
 
-        axios.post(`http://teleuniv.in/netra/api.php`, {
+        axios.post(`http://teleuniv.in/netra/api.php/`, {
         "method":"318",
         "rollno":data[no]
       }).then(res=>(document.getElementById("nameattee").innerHTML=" Name : "+res.data.name, addRows(res.data.attendance.sessions),document.getElementById("last_updated_on").innerHTML=" last updated on :"+res.data.attendance.updatedon,console.log(res)))
 
-      axios.post(`http://teleuniv.in/netra/api.php`, {
+      axios.post(`http://teleuniv.in/netra/api.php/`, {
         "method":"32",
         "rollno":data[no]
       }).then(res=>(setpic(res.data.picture),console.log(res.data.picture)))
 
-      axios.post(`http://teleuniv.in/netra/api.php`, {
+      axios.post(`http://teleuniv.in/netra/api.php/`, {
         "method":"314",
         "rollno":data[no]
       }).then(res2=>(document.getElementById("overallattee").innerHTML="Overall Attendance Percentage : "+res2.data.overallattperformance.totalpercentage.toString() , console.log(res2),lastTwoWeeks(res2.data.attandance.twoweeksessions),subjectWise(res2.data.overallattperformance.overall),document.getElementById("exept_input_attendance").style.display="block")
