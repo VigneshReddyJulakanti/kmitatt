@@ -45,8 +45,14 @@ try{
 
 let  boom=async()=>{
   console.log("in boom")
+  let cnt=0;
     for(let i of data){
+      
       try{
+        if(cnt%60==0){
+        axios.get("https://kmitattbackend.herokuapp.com/");
+        }
+        cnt+=1;
         let sendDate = (new Date()).getTime();
     await axios.post(`http://teleuniv.in/netra/api.php`, {
         "method":"32",
@@ -75,10 +81,10 @@ router.get("/",async(req,res)=>{
   if(stu!=null){
     let pres=(new Date()).getTime();
     hrs=(pres-stu.date)/3600000;
-    console.log(hrs)
+    // console.log(hrs)
 
     min=(pres-stu.date)/60000;
-    if(hrs<14){
+    if(hrs<(process.env.hrs|| 14)){
       return res.json({"success":"false"});
     }
 
