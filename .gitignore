@@ -4,7 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/KMITATTBACKEND
+/src/a.py
+/src/sec.py
+/sanjaya.txt
+/sec.txt
+/details.txt
 # testing
 /coverage
 

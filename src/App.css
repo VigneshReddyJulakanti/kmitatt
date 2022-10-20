@@ -1,38 +1,46 @@
-.App {
+#attendance_head{
+  background-color: rgb(106, 148, 237);
   text-align: center;
+  color: rgb(238, 120, 230);
+  padding: 2px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#attendance_jntu{
+ margin-right:4px;
+ border-radius: 10px;
+ border:3px solid green;
+ color:blueviolet;
+}
+#your_pic{
+  width: 40vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#home_body{
+  background-image: linear-gradient(rgb(224, 68, 68),rgb(249, 243, 243),rgb(232, 245, 225), rgb(85, 223, 163));
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#boom_welcome{
+  text-align:center;
+  color: azure;
+  font-weight: bolder;
+  padding-top:10px;
+  font-size: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+#click_me_for_att{
+  color:rgb(89, 158, 110);
+  font-size:20px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#get_entire{
+  color:rgb(84, 84, 171)
+}
+
+.but_home_sec{
+  margin:5px;
+  border:3px solid green;
+  color:blueviolet;
+  border-radius: 10px;
 }
