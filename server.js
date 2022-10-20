@@ -29,8 +29,9 @@ app.use(cors({
 }))
 
 app.use('/api/update',require('./routes/update'));
-// app.use('/api/notes',require('./routes/notes'))
+app.use('/api/requests',require('./routes/requests'))
 app.get('/', (req, res) => {
+  
   res.send("Welcome to boom world")
 })
 
