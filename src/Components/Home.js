@@ -2,12 +2,13 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react';
-const axios =require("axios")
+import axios from "axios"
+
 export default function 
 () {
   let Navigate=useNavigate();
   useEffect(() => {
-    axios.get("https://kmitattbackend.herokuapp.com/")
+    axios.get("https://kmitattbackend.herokuapp.com/",{})
   }, [])
   
   return (
