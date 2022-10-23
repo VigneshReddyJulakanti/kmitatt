@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/KMITATTBACKEND
+/KMITATTBACKEND/node_modules
 /src/a.py
 /src/sec.py
 /sanjaya.txt
